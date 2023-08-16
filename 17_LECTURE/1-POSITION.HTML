@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        div{
+            border: solid black 1px;
+            height: 10000px;
+
+        }
+        img{
+            margin: 10px;
+        } 
+        /* .post2{
+            position: relative;
+            top: 100px;
+            left: 200px;
+        } */
+
+        /* .post2{
+             position: absolute; 
+
+        } */
+        .post4{
+            position: fixed ;
+            
+        }
+        .post3{
+            position: sticky;
+            top: 100px;
+        }
+        .box{
+            background-color: aquamarine;
+            height: 5000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">  <!--AGAR ME SABHI IMG KE LIYE ALAG ALAG DIV LETA HOON TO YE ALAG ALAG LINE ME AAYEGI YANI BLOCK BAN JAYEGI-->
+        <img 
+        src="img1.jpeg"
+        alt="img1"
+        width="300px"
+        height="300px"
+        class="post1"
+        />
+        
+        <img 
+        src="img2.jpeg"
+        alt="img2"
+        width="300px"
+        height="300px"
+        class="post2"
+        />
+
+        <img 
+        src="img3.jpeg"
+        alt="img3"
+        width="300px"
+        height="300px"
+        class="post3"
+        />
+
+        <img 
+        src="img4.jpeg"
+        alt="img4"
+        width="300px"
+        height="300px"
+        class="post4"
+        />
+    </div>
+    <div class="box">
+
+    </div>
+</body>
+</html>
