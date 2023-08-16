@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 2</title>
+</head>
+<body>
+    <h3>Job Application</h3>
+
+    <form >
+        <label for="name">Name</label><br>
+        <input type="text" name="name" id="name"><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email"><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="text" name="phone" id="phone"><br>
+
+        <label for="file1">Resume:</label>
+        <input type="file" name="file1" id="file1"><br>
+
+        <label for="experince">Experince(years)</label><br>
+        <input type="number" name="experince" id="experince" min="0" max="100">
+
+        <fieldset>
+            <legend>skill</legend>
+            <input type="checkbox" name="checkbox1" id="checkbox1"><br>
+            <label for="checkbox">HTML</label><br>
+            <input type="checkbox" name="checkbox2" id="checkbox2"><br>
+            <label for="checkbox2">CSS</label><br>
+            <input type="checkbox" name="checkbox3" id="checkbox3"><br>
+            <label for="checkbox3">JavaScript</label><br>
+        </fieldset><br>
+
+        <label for="education">Higher Education</label>
+        <select name="education" id="education">
+            <option value="1">Higher Education</option>
+            <option value="2">Secondary Education</option>
+            <option value="3">Graduate</option>
+        </select>
+
+        <fieldset>
+            <legend>Availability</legend>
+        <input type="radio" name="fulltime" id="fulltime"><br>
+        <label for="fulltime">Full Time</label><br>
+        <input type="radio" name="parttime" id="parttime"><br>
+        <label for="parttime">Part Time</label><br>
+        </fieldset>
+
+        <label for="textaraea">Additional Comment</label><br>
+        <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+        </form>
+
+</body>
+</html>
