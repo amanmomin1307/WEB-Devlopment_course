@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shadow</title>
+    <style>
+        :root{
+            --primary-color: brown;  /*custome varible define kar sakte hai or kaha se bhi is access kar sakte hai */
+            --custome-width: 330px;
+        }
+        .container{
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            --prime-color: aqua;
+            background-color: aquamarine;
+            width: 330px;
+            height: 330px;
+            border: 1px solid var(--prime-color);
+            padding: 2px;
+            margin: 5px;
+            padding: 5px;  
+            /* box-shadow: -10px 15px brown;  */
+            /* box-shadow: 10px 15px 5px brown; /* 3RD VARIBLE KE JARIYE BLURR VALUE SET KAR SAKTA HUN*/
+            /* box-shadow: 10px 15px 5px 20px brown;  /*4TH VARIABBLE WIDE KARNE KE KAAM AATA HAI */
+            /* box-shadow: inset 10px 15px brown; */
+            box-shadow: 10px 15px brown, 15px 10px green;
+        }
+        #hed1{
+           text-shadow: 2px 3px 5px white; /*upper jo kuch sentax hamne box pr lagaye hai vo text-shaddow pr bhi laga sakte hai*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="./22_LECTURE/logi2.svg" alt="wallpaper">
+            <h2 id="hed1">Welcome to  CodeHelp</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est harum obcaecati eum inventore nisi dolores doloremque quibusdam iste suscipit officia?</p>
+
+        </div>
+    </div>
+</body>
+</html>
