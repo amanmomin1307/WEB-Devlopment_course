@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second-Card</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        width: 100vw;
+        height: 100vw;
+        background: rgb(131,58,180);
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(252,0,221,1) 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;       
+    }
+    .card{
+        width: 400px;
+        height: 600px;
+        background-color: white;
+        border-radius: 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    .card img{
+        width: 100%;
+        height: 30%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .textbox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 20px;
+    }
+    #amount{
+        width: 80%;
+        height: 10%;
+        background-color: burlywood;
+        border: 1px solid black;
+        border-radius: 10%;
+    }
+    #payment{
+        width: 80%;
+        height: 9%;
+        background-color: blueviolet;
+        color: aliceblue;
+        border-radius: 10px;   
+        box-shadow: 0 10px 20px rgba(0,0,0,0,19), 0 6px 6px rgba(0,0,0,0,22);
+    }
+    .cancelbox{
+        text-decoration: none;
+        color: rgb(46,43,43);
+        font-weight: bold;
+        font-size: large;
+    }
+    #amount{
+        width: 80%;
+        height: 10%;
+        background-color: aqua;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .leftbox{
+        height: 100%;
+        width: fit-content;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-items: center;
+    }
+    .rightbox{
+
+    }
+    .imgbox img{
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="card">
+
+            <img src="./tech.jpeg" alt="">
+
+            <div class="textbox">
+                <h2>Order Summray</h2>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis a ea exercitationem repellendus at! Quasi impedit commodi natus fugit, voluptatibus consequuntur quisquam, dolore aperiam maiores veritatis, nobis voluptates illo voluptatum!</p> 
+            </div>
+
+            <div id="amount">
+
+                <div class="leftbox">
+                    <div class="imgbox">
+                        <img src="./music.png" alt="">
+                    </div>
+                    <div id="textamount">
+                        <p>Amount</p>
+                        <p>99$per month</p>
+                    </div>
+                </div>
+
+                <div class="rightbox">
+                   <a href="">Change</a>
+                </div>
+            </div>
+
+            <button id="payment">
+                Proceed to payment
+            </button>
+
+            <div class="cancelbox">
+                <a href="">Cancel Box</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
